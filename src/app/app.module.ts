@@ -18,7 +18,8 @@ import { HeaderComponent } from './header/header.component';
     HabilidadesComponent,
     ProjetosComponent,
     DetalheComponent,
-    HeaderComponent
+    HeaderComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  font-weight: 400;
+  font-family: sans-serif;
+	vertical-align: baseline;
+}
+
+html {
+  font-size: 10px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+input{
+  outline: none;
+  font-weight: 100;
+}
