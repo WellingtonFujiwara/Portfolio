@@ -1,0 +1,46 @@
+:host {
+  main {
+    height: 556px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    .text {
+      width: 360px;
+
+      p {
+        font-size: 3rem;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+    }
+
+    .perfil-photo {
+      height: 352px;
+
+      img {
+        height: 320px;
+      }
+
+      .rectangle {
+        box-sizing: border-box;
+        width: 272.11px;
+        height: 320px;
+        border: 10px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
+
+        position: relative;
+        z-index: -1;
+        top: -290px;
+        right: -35px;
+      }
+    }
+  }
+}
