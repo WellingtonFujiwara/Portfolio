@@ -1,0 +1,36 @@
+main {
+  height: 88vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 10px;
+
+      img {
+        width: 120px;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+

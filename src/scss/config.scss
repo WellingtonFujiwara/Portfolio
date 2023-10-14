@@ -5,11 +5,16 @@
 	font-size: 100%;
   font-weight: 400;
   font-family: sans-serif;
-	vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 ol, ul {

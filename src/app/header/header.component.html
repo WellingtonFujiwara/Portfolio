@@ -1,15 +1,34 @@
 <nav>
   <ul class="menu-pages">
-    <li>HOME</li>
-    <li>SOBRE</li>
-    <li>HABILIDADES</li>
-    <li>PROJETOS</li>
+    <li><a [routerLink]="['']">HOME</a></li>
+    <li><a [routerLink]="['sobre']">SOBRE</a></li>
+    <li><a [routerLink]="['habilidades']">HABILIDADES</a></li>
+    <li><a [routerLink]="['projetos']">PROJETOS</a></li>
   </ul>
 
   <ul class="menu-contact">
-     <li><img src="./assets/icons/GitHub.png" alt="github"></li>
-     <li><img src="./assets/icons/LinkedIn.png" alt="linkedin"></li>
-     <li><img src="./assets/icons/WhatsApp.png" alt="whatsapp"></li>
-     <li><img src="./assets/icons/Email.png" alt="email"></li>
+    <li>
+      <a href="https://github.com/WellingtonFujiwara" target="_blank">
+        <img src="./assets/icons/GitHub.png" alt="github">
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.linkedin.com/in/wellington-xavier-alves-fujiwara-65a04018a/" target="_blank">
+        <img src="./assets/icons/LinkedIn.png" alt="linkedin">
+      </a>
+    </li>
+
+    <li>
+      <a href="https://wa.me//5517991337821" target="_blank">
+        <img src="./assets/icons/WhatsApp.png" alt="whatsapp">
+      </a>
+    </li>
+
+    <li>
+      <a href="mailto:w.fujiwara93@gmail.com" target="_blank">
+        <img src="./assets/icons/Email.png" alt="email">
+      </a>
+    </li>
   </ul>
 </nav>

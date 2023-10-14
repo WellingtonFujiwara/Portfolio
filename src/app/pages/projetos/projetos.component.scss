@@ -1,0 +1,24 @@
+main {
+  height: 88vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  div {
+    display: flex;
+    gap: 40px;
+
+    .boxProject {
+      width: 406px;
+      height: 600px;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+}

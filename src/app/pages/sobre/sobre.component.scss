@@ -1,0 +1,26 @@
+main {
+  height: 88vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  img {
+    height: 320px;
+  }
+
+  .sobre {
+    width: 504px;
+
+    h2 {
+      font-size: 3.6rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
