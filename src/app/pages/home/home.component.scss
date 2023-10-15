@@ -2,43 +2,63 @@ main {
   height: 88vh;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
 
-  .text {
-    width: 360px;
+  .bgText {
 
-    p {
-      font-size: 3rem;
-      margin-bottom: 30px;
+    span {
+      display: block;
+      font-size: 12rem;
+      color: rgba(255, 255, 255, 0.01);
     }
-
-    h1 {
-      font-size: 4rem;
-      font-weight: 700;
+    .frontEnd {
+      font-size: 19.5rem;
     }
   }
 
-  .perfil-photo {
-    height: 352px;
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: absolute;
 
-    img {
-      height: 320px;
+    .text {
+      width: 360px;
+
+      p {
+        font-size: 3rem;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+      }
     }
 
-    .rectangle {
-      box-sizing: border-box;
-      width: 272.11px;
-      height: 320px;
-      border: 10px;
-      border-style: solid;
-      border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
+    .perfil-photo {
+      height: 352px;
 
-      position: relative;
-      z-index: -1;
-      top: -290px;
-      right: -35px;
+      img {
+        height: 320px;
+      }
+
+      .rectangle {
+        box-sizing: border-box;
+        width: 272.11px;
+        height: 320px;
+        border: 10px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
+
+        position: relative;
+        z-index: -1;
+        top: -290px;
+        right: -35px;
+      }
     }
   }
 }

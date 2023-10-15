@@ -5,32 +5,53 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
 
-  h2 {
-    font-size: 3.6rem;
+  .bgText {
+
+    span {
+      display: block;
+      font-size: 12rem;
+      color: rgba(255, 255, 255, 0.01);
+    }
+    .frontEnd {
+      font-size: 19.5rem;
+    }
   }
 
-  .skills {
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
 
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    h2 {
+      font-size: 3.6rem;
+    }
 
-      margin: 10px;
+    .skills {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
 
-      img {
-        width: 120px;
-      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      span {
-        font-size: 2rem;
+        margin: 10px;
+
+        img {
+          width: 10vw;
+        }
+
+        span {
+          font-size: 2rem;
+        }
       }
     }
   }
+
 }
 
 
