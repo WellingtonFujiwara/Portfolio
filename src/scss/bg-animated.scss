@@ -1,0 +1,34 @@
+:root {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-size: 300%;
+  background-image: linear-gradient(-45deg, hsl(0, 0%, 0%) 0%, #150E2F 25%, #150E2F 51%, #000000 100%);
+  -webkit-animation: AnimateBG 10s ease infinite;
+          animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

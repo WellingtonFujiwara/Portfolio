@@ -21,17 +21,25 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+main {
+  height: 88vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .bg-text {
+
+    span {
+      display: block;
+      font-size: 12rem;
+      color: rgba(255, 255, 255, 0.01);
+    }
+    .front-end {
+      font-size: 19.5rem;
+    }
+  }
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
 
-input{
-  outline: none;
-  font-weight: 100;
-}

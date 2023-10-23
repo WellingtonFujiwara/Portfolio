@@ -1,57 +1,37 @@
-main {
-  height: 88vh;
-
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 40px;
+  position: absolute;
 
-  .bg-text {
-
-    span {
-      display: block;
-      font-size: 12rem;
-      color: rgba(255, 255, 255, 0.01);
-    }
-    .front-end {
-      font-size: 19.5rem;
-    }
+  h2 {
+    font-size: 3.6rem;
   }
 
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    position: absolute;
+  .skills {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
 
-    h2 {
-      font-size: 3.6rem;
-    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    .skills {
-      display: grid;
-      grid-template-columns: 250px 250px 250px;
+      margin: 10px;
 
-      div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      img {
+        width: 10vw;
+      }
 
-        margin: 10px;
-
-        img {
-          width: 10vw;
-        }
-
-        span {
-          font-size: 2rem;
-        }
+      span {
+        font-size: 2rem;
       }
     }
   }
-
 }
+
+
 
 
