@@ -44,9 +44,16 @@ section {
           font-weight: 700;
         }
 
-        p {
+        .description {
           font-size: 1.2rem;
           padding: 0 30px;
+        }
+
+        a {
+          color: black;
+          p {
+          font-size: 1.2rem;
+          }
         }
       }
 

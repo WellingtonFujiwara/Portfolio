@@ -7,7 +7,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { HabilidadesComponent } from './pages/habilidades/habilidades.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
-import { DetalheComponent } from './pages/detalhe/detalhe.component';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { HeaderComponent } from './header/header.component';
     SobreComponent,
     HabilidadesComponent,
     ProjetosComponent,
-    DetalheComponent,
     HeaderComponent,
 
   ],

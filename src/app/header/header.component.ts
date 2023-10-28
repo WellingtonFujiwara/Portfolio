@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  public menuVariable:boolean = false;
+  public boxBarVariable:boolean = false;
+
+  public toggle() {
+    this.menuVariable =! this.menuVariable;
+    this.boxBarVariable =! this.boxBarVariable;
+  }
 }

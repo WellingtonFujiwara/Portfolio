@@ -1,10 +1,16 @@
 <nav>
-  <ul class="menu-pages">
+  <ul class="menu-pages" [class.menu-pages-active]="menuVariable">
     <li><a [routerLink]="['']">HOME</a></li>
     <li><a [routerLink]="['sobre']">SOBRE</a></li>
     <li><a [routerLink]="['habilidades']">HABILIDADES</a></li>
     <li><a [routerLink]="['projetos']">PROJETOS</a></li>
   </ul>
+
+  <div class="box-bar" [class.box-bar-active]="boxBarVariable" (click)="toggle()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
 
   <ul class="menu-contact">
     <li>

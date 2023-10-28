@@ -48,5 +48,68 @@ nav {
       }
     }
   }
+
+  @media (max-width: 800px) {
+    .menu-pages {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      z-index: 999;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 80px;
+
+      border-radius: 0 0 20px 20px;
+      background-color: #000000ef;
+      text-align: center;
+      padding: 5px 0;
+
+      height: 100%;
+      width: 70%;
+      transition: 0.9s;
+
+      li {
+        margin-left: 50px;
+      }
+    }
+
+    .menu-pages-active {
+      left: 0;
+    }
+
+    .box-bar{
+      display: block;
+      cursor: pointer;
+    }
+
+    .box-bar-active .bar:nth-child(2){
+      opacity: 0;
+    }
+
+    .box-bar-active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .box-bar-active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar{
+      display: block;
+      width: 28px;
+      height: 3px;
+      border-radius: 2px;
+      margin: 5px auto;
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
+
+
+
+
 
