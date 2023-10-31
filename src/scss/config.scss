@@ -1,3 +1,15 @@
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (max-width: 640px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1024px) { @content; }
+  }
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -34,9 +46,17 @@ main {
       display: block;
       font-size: 12rem;
       color: rgba(255, 255, 255, 0.01);
+
+      @include breakpoint(large) {
+        font-size: 8.5rem;
+      }
     }
     .front-end {
       font-size: 18.7rem;
+
+      @include breakpoint(large) {
+        font-size: 13rem;
+      }
     }
   }
 }
