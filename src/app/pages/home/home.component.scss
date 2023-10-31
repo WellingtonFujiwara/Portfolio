@@ -1,43 +1,80 @@
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-  position: absolute;
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1200px) { @content; }
+  }
+}
 
-  .text {
-    width: 360px;
-
-    p {
-      font-size: 3rem;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 4rem;
-      font-weight: 700;
+main {
+  .bg-text {
+    @include breakpoint(small) {
+      display: none;
     }
   }
 
-  .perfil-photo {
-    height: 352px;
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: absolute;
 
-    img {
-      height: 320px;
+    @include breakpoint(small) {
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .rectangle {
-      box-sizing: border-box;
-      width: 272.11px;
-      height: 320px;
-      border: 10px;
-      border-style: solid;
-      border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
+    .text {
+      width: 360px;
 
-      position: relative;
-      z-index: -1;
-      top: -290px;
-      right: -35px;
+      @include breakpoint(small) {
+        width: 270px;
+      }
+
+      p {
+        font-size: 3rem;
+        margin-bottom: 30px;
+
+        @include breakpoint(small) {
+          font-size: 2rem;
+        }
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+
+        @include breakpoint(small) {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .perfil-photo {
+      height: 352px;
+
+      img {
+        width: 272px;
+      }
+
+      .rectangle {
+        box-sizing: border-box;
+        width: 272px;
+        height: 320px;
+        border: 10px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
+
+        position: relative;
+        z-index: -1;
+        top: -290px;
+        right: -35px;
+      }
     }
   }
 }
