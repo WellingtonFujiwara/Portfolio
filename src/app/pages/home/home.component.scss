@@ -10,90 +10,83 @@
   }
 }
 
-main {
-  .bg-text {
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  position: absolute;
+
+  @include breakpoint(small) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text {
+    width: 360px;
+
     @include breakpoint(small and medium) {
-      display: none;
+      width: 270px;
+    }
+
+    p {
+      font-size: 3rem;
+      margin-bottom: 30px;
+
+      @include breakpoint(small and medium) {
+        font-size: 2rem;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+
+      @include breakpoint(small and medium) {
+        font-size: 3rem;
+      }
     }
   }
 
-  section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    position: absolute;
+  .perfil-photo {
+    height: 351px;
 
     @include breakpoint(small) {
-      flex-direction: column;
-      gap: 20px;
+      height: 309px;
     }
 
-    .text {
-      width: 360px;
+    img {
+      width: 272px;
+      z-index: 1;
+      position: relative;
+      left: -16px;
 
       @include breakpoint(small and medium) {
-        width: 270px;
-      }
-
-      p {
-        font-size: 3rem;
-        margin-bottom: 30px;
-
-        @include breakpoint(small and medium) {
-          font-size: 2rem;
-        }
-      }
-
-      h1 {
-        font-size: 4rem;
-        font-weight: 700;
-
-        @include breakpoint(small and medium) {
-          font-size: 3rem;
-        }
+        width: 240px;
       }
     }
 
-    .perfil-photo {
-      height: 351px;
+    .rectangle {
+      box-sizing: border-box;
+      width: 272px;
+      height: 320px;
+      border: 10px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
 
-      @include breakpoint(small) {
-        height: 309px;
-      }
+      position: relative;
+      top: -290px;
+      right: -16px;
 
-      img {
-        width: 272px;
-        z-index: 1;
-        position: relative;
-        left: -16px;
+      @include breakpoint(small and medium) {
+        width: 240px;
+        height: 275px;
 
-        @include breakpoint(small and medium) {
-          width: 240px;
-        }
-      }
-
-      .rectangle {
-        box-sizing: border-box;
-        width: 272px;
-        height: 320px;
-        border: 10px;
-        border-style: solid;
-        border-image: linear-gradient(to right, #8F00FF, #2400FF, #8BB3FF)1;
-
-        position: relative;
-        top: -290px;
-        right: -16px;
-
-        @include breakpoint(small and medium) {
-          width: 240px;
-          height: 275px;
-
-          top: -250px;
-        }
+        top: -250px;
       }
     }
   }
 }
+
 
 

@@ -14,15 +14,32 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
   position: absolute;
 
+  @include breakpoint(small) {
+    flex-direction: column;
+    gap:10px;
+  }
+
   img {
-    height: 320px;
+    width: 380px;
+
+    @include breakpoint(small and medium) {
+      width: 240px;
+    }
   }
 
   .sobre {
     width: 504px;
+
+    @include breakpoint(large) {
+      width: 340px;
+    }
+
+    @include breakpoint(small and medium) {
+      width: 300px;
+    }
 
     h2 {
       font-size: 3.6rem;
