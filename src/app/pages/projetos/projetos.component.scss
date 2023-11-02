@@ -1,3 +1,15 @@
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (max-width: 640px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1024px) { @content; }
+  }
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -6,12 +18,16 @@ section {
   gap: 40px;
   position: absolute;
 
+  margin-top: 500px;
+
   h2 {
     font-size: 3.6rem;
   }
 
-  div {
+  .contents-cards {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 
     .card-project {
@@ -29,7 +45,12 @@ section {
       align-items: center;
       justify-content: space-evenly;
 
-      section {
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
         width: 100%;
         height: 100%;
         text-align: center;
@@ -38,6 +59,7 @@ section {
         transition: 0.5s;
         color: rgb(0, 0, 0);
         background-color: rgba(204, 204, 204, 0.904);
+        position: absolute;
 
         h3 {
           font-size: 2rem;
@@ -57,7 +79,7 @@ section {
         }
       }
 
-      section:hover {
+      .info:hover {
         transform: translateY(0);
         opacity: 1;
       }
