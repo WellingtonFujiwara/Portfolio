@@ -18,7 +18,9 @@ section {
   gap: 40px;
   position: absolute;
 
-  margin-top: 500px;
+  @include breakpoint(small) {
+    margin-top: 500px;
+  }
 
   h2 {
     font-size: 3.6rem;
