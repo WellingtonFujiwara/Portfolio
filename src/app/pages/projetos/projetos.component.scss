@@ -1,5 +1,8 @@
 @mixin breakpoint($point) {
-  @if $point == small {
+  @if $point == tiny {
+    @media (max-width: 439px) { @content; }
+  }
+  @else if $point == small {
     @media (max-width: 640px) { @content; }
   }
   @else if $point == medium {
@@ -18,8 +21,8 @@ section {
   gap: 40px;
   position: absolute;
 
-  @include breakpoint(small) {
-    margin-top: 500px;
+  @include breakpoint(tiny) {
+    margin-top: 250px;
   }
 
   h2 {
@@ -47,6 +50,11 @@ section {
       align-items: center;
       justify-content: space-evenly;
 
+      @include breakpoint(small and medium and large) {
+        width: 200px;
+        height: 200px;
+      }
+
       .info {
         display: flex;
         flex-direction: column;
@@ -68,9 +76,12 @@ section {
           font-weight: 700;
         }
 
-        .description {
-          font-size: 1.2rem;
-          padding: 0 30px;
+        .icons {
+          .icon {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+          }
         }
 
         a {

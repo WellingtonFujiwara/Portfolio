@@ -12,6 +12,10 @@ export class HeaderComponent {
 
   public toggle() {
     this.menuVariable =! this.menuVariable;
-    this.boxBarVariable =! this.boxBarVariable;
+    /* this.boxBarVariable =! this.boxBarVariable; */
+  }
+
+  public close() {
+    this.menuVariable =! this.menuVariable
   }
 }
